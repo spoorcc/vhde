@@ -35,8 +35,10 @@ private:
 
   //void drawText(const Clutter::Color &color);
 
-  void on_paint();
-  void pick_vfunc(const Clutter::Color &color);
+  virtual void paint();
+#ifdef BROKEN
+  virtual void pick(const Clutter::Color &color);
+#endif
 };
 
 #endif /* _CLUTTER_SCALING_TEXT_H */
