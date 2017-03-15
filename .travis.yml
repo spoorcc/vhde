@@ -1,4 +1,5 @@
 language: cpp
+dist: trusty
 sudo: false
 
 addons:
@@ -13,6 +14,9 @@ addons:
 compiler:
   - gcc
   - clang
+
+before_script:
+  - ./install-cluttermm.sh
 
 script:
   - make
