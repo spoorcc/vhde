@@ -35,9 +35,9 @@ private:
 
   //void drawText(const Clutter::Color &color);
 
-  virtual void paint();
 #ifdef BROKEN
-  virtual void pick(const Clutter::Color &color);
+  void paint_vfunc() override;
+  void pick_vfunc(const Clutter::Color &color);
 #endif
 };
 

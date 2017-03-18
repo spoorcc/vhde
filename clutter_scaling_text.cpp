@@ -40,7 +40,8 @@ ClutterScalingText::ClutterScalingText(const Glib::ustring& font_name, const Gli
 
 extern int mysize;
 
-void ClutterScalingText::paint()
+#ifdef BROKEN
+void ClutterScalingText::paint_vfunc()
 {
   double fontSizeSmall = 12, fontSizeMed = 27, fontSizeLarge = 39;
   double fontScale;
