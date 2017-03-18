@@ -93,7 +93,7 @@ static bool on_key_pressed(Clutter::KeyEvent *pEvent, GuiComponent *pGuiComponen
   static State state = NORMAL;
 
   /* Handle escape */
-  if(pEvent->keyval == CLUTTER_Escape)
+  if(pEvent->keyval == CLUTTER_KEY_Escape)
   {
     printf("Escaped\n");
     state = NORMAL;
